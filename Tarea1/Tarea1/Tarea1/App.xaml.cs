@@ -11,6 +11,7 @@ namespace Tarea1
             InitializeComponent();
 
             MainPage = new MainPage();
+            //MainPage = new SignUpPage();
         }
 
         protected override void OnStart()

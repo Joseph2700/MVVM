@@ -133,9 +133,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\ic_user.png" />
-  </ItemGroup>
-  <ItemGroup>
     <BundleResource Include="Resources\ic_facebook.png" />
   </ItemGroup>
   <ItemGroup>
@@ -146,5 +143,11 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\ic_twitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_camera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_user.png" />
   </ItemGroup>
 </Project>

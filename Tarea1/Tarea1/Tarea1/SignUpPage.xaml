@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Tarea1.SignUpPage">
+
+    <ScrollView>
+        <StackLayout Margin = "15">
+            <StackLayout Orientation = "Horizontal">
+                <Label Text = "Sign Up" TextColor = "Black" FontSize = "50" FontAttributes = "Bold"></Label>
+                <Label Text = "Login" TextColor = "Gray" FontSize = "30" FontAttributes = "Bold" Margin = "15" HorizontalOptions="EndAndExpand"></Label>
+            </StackLayout>
+            <Image Source = "ic_camera.png" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest = "100" WidthRequest = "100"></Image>
+            <Entry Text = "Email Address" TextColor = "Gray"></Entry>
+            <Entry Text = "Username" TextColor = "Gray"></Entry>
+            <Entry Text = "Password" TextColor = "Gray"></Entry>
+            <Entry Text = "Repeat Password" TextColor = "Gray"></Entry>
+            <Button Text = "SIGN UP"></Button>
+            <Label Text = "Terms of service" TextColor = "Gray" FontSize = "20" VerticalOptions = "Center" HorizontalOptions = "Center"></Label> 
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
