@@ -7,18 +7,104 @@
              x:Class="Tarea1.SignUpPage">
 
     <ScrollView>
-        <StackLayout Margin = "15">
-            <StackLayout Orientation = "Horizontal">
-                <Label Text = "Sign Up" TextColor = "Black" FontSize = "50" FontAttributes = "Bold"></Label>
-                <Label Text = "Login" TextColor = "Gray" FontSize = "30" FontAttributes = "Bold" Margin = "15" HorizontalOptions="EndAndExpand"></Label>
-            </StackLayout>
-            <Image Source = "ic_camera.png" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest = "100" WidthRequest = "100"></Image>
-            <Entry Text = "Email Address" TextColor = "Gray"></Entry>
-            <Entry Text = "Username" TextColor = "Gray"></Entry>
-            <Entry Text = "Password" TextColor = "Gray"></Entry>
-            <Entry Text = "Repeat Password" TextColor = "Gray"></Entry>
-            <Button Text = "SIGN UP"></Button>
-            <Label Text = "Terms of service" TextColor = "Gray" FontSize = "20" VerticalOptions = "Center" HorizontalOptions = "Center"></Label> 
-        </StackLayout>
+        <Grid Padding = "10" Margin = "10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width = "2.5*"/>
+                <ColumnDefinition Width = "2.5*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Label Text = "Sign Up"
+                   TextColor = "Black"
+                   FontSize = "35"
+                   Grid.Column = "0"
+                   Grid.Row =  "0"
+                   Grid.ColumnSpan = "2"/>
+
+            <Label Text = "Login"
+                   TextColor = "Gray"
+                   FontSize = "20"
+                   HorizontalOptions = "EndAndExpand"
+                   Grid.Column = "2"
+                   Grid.Row = "0"
+                   Grid.ColumnSpan = "2">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped = "TapGestureRecognizer_Tapped"/>
+                </Label.GestureRecognizers>
+            </Label>
+
+            <Image Source = "ic_camera.png"
+                   HeightRequest = "100"
+                   WidthRequest = "100"
+                   VerticalOptions = "Center"
+                   Grid.Row = "1"
+                   Grid.Column = "0"
+                   Grid.ColumnSpan = "4"/>
+
+            <Entry x:Name = "entrySignUpEmail"
+                   Placeholder = "Email address"
+                   Grid.Row = "0"
+                   Grid.Column = "2"
+                   Grid.ColumnSpan = "2"/>
+
+            <Entry x:Name = "entrySignUpUsername"
+                   Placeholder = "Username"
+                   Grid.Row = "3"
+                   Grid.Column = "0"
+                   Grid.ColumnSpan = "2"/>
+
+            <Entry x:Name = "entrySignUpPassword"
+                   Placeholder = "Password"
+                   IsPassword = "True"
+                   Grid.Row = "4"
+                   Grid.Column = "0"
+                   Grid.ColumnSpan = "2"/>
+
+            <Image Source = "ic_eyeopen.png"
+                   HorizontalOptions = "End"                   
+                   WidthRequest = "30"
+                   Grid.Row = "4"
+                   Grid.Column = "2"/>
+
+
+            <Entry x:Name = "entrySignUpRPassword"
+                   Placeholder = "Repeat Password"
+                   IsPassword = "True"
+                   Grid.Row = "5"
+                   Grid.Column = "0"
+                   Grid.ColumnSpan = "2"/>
+
+            <Image Source = "ic_eyeopen.png"
+                   HorizontalOptions = "End"                   
+                   WidthRequest = "30"
+                   Grid.Row = "5"
+                   Grid.Column = "2"/>
+
+            <Button x:Name = "buttonSignUpPage"
+                    Text = "SIGN UP"                    
+                    Clicked = "buttonSignUpPage_Clicked"
+                    Grid.Row = "6"                      
+                    Grid.Column = "0"
+                    Grid.ColumnSpan = "2"/>
+
+            <Label Text = "Terms of Service"
+                   TextColor="Gray"
+                   FontSize = "20"
+                   HorizontalOptions = "Center"
+                   Grid.Row = "7"
+                   Grid.Column = "0"
+                   Grid.ColumnSpan = "2"/>
+        </Grid>        
     </ScrollView>
 </ContentPage>

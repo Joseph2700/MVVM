@@ -8,10 +8,8 @@
              Title  = "Discovery"
              IconImageSource = "ic_location.png">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text=""
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid>
+            
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
