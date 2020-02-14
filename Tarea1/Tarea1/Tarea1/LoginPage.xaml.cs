@@ -17,5 +17,19 @@ namespace Tarea1
         {
             InitializeComponent();
         }
+
+        async void buttonLoginPage_Clicked(object sender, EventArgs e)
+        {
+           if(string.IsNullOrEmpty(entryLoginUsername.Text) || string.IsNullOrEmpty(entryLoginPassword.Text))
+            {
+                await DisplayAlert("Campos Vacios", "Favor llenar todos los campos", "OK");
+            }
+            await Navigation.PushAsync(new DiscoveryPage());
+        }
+
+        private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SignUpPage());
+        }
     }
 }

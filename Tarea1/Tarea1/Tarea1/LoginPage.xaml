@@ -7,22 +7,116 @@
              x:Class="Tarea1.MainPage">
 
     <ScrollView>
-        <StackLayout Margin = "15">
-            <StackLayout Orientation = "Horizontal">
-                <Label Text = "Login" TextColor = "Black" FontSize = "50" FontAttributes = "Bold"></Label>
-                <Label Text = "Sign Up" TextColor = "Gray" FontSize = "30" FontAttributes = "Bold" Margin = "15" HorizontalOptions="EndAndExpand"></Label>
-            </StackLayout>
-            <Image Source = "ic_user.png" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest = "100" WidthRequest = "100"></Image>
-            <Entry Text = "Username or email address" TextColor = "Gray"></Entry>
-            <Entry Text = "Password" TextColor = "Gray"></Entry>
-            <Button Text = "LOG IN"></Button>
-            <Label Text = "Login with" TextColor = "Gray" FontSize = "20" VerticalOptions = "Center" HorizontalOptions = "Center"></Label>
-            <StackLayout Orientation = "Horizontal">
-                <Image Source = "ic_googleplus.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" HeightRequest = "50" WidthRequest = "50"></Image>
-                <Image Source = "ic_github.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" WidthRequest = "50"></Image>
-                <Image Source = "ic_twitter.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"  HeightRequest = "50" WidthRequest = "50"></Image>
-                <Image Source = "ic_facebook.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" HeightRequest = "50" WidthRequest = "50"></Image>
-            </StackLayout>
-        </StackLayout>
+        <Grid Padding = "10" Margin = "10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width = "2.5*"/>
+                <ColumnDefinition Width = "2.5*"/>
+                <ColumnDefinition Width = "2.5*"/>
+                <ColumnDefinition Width = "2.5*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height = "Auto"/>
+                <RowDefinition Height = "Auto"/>
+                <RowDefinition Height = "Auto"/>
+                <RowDefinition Height = "Auto"/>
+                <RowDefinition Height = "Auto"/>
+                <RowDefinition Height = "Auto"/>
+                <RowDefinition Height = "Auto"/>
+                <RowDefinition Height = "Auto"/>
+            </Grid.RowDefinitions>
+
+            <Label Text = "Login"
+                   TextColor = "Black"
+                   FontSize = "35"
+                   Grid.Column = "0"
+                   Grid.Row =  "0"
+                   Grid.ColumnSpan = "2"/>
+
+            <Label Text = "Sign Up"
+                   TextColor = "Gray"
+                   FontSize = "20"
+                   HorizontalOptions = "EndAndExpand"
+                   Grid.Column = "2"
+                   Grid.Row = "0"
+                   Grid.ColumnSpan = "2">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped = "TapGestureRecognizer_Tapped"/>
+                </Label.GestureRecognizers>
+            </Label>
+
+            <Image Source = "ic_user.pg"
+                   HeightRequest = "100"
+                   WidthRequest = "100"
+                   VerticalOptions = "Center"
+                   Grid.Row = "1"
+                   Grid.Column = "0"
+                   Grid.ColumnSpan = "4"/>
+
+            <Entry x:Name = "entryLoginUsername"
+                   Placeholder = "Username or email address"
+                   Grid.Row = "2"
+                   Grid.Column = "0"
+                   Grid.ColumnSpan = "4"/>
+
+            <Entry x:Name = "entryLoginPassword"
+                   Placeholder = "Password"
+                   IsPassword = "True"
+                   Grid.Row = "3"
+                   Grid.Column = "0"
+                   Grid.ColumnSpan = "4"/>
+
+            <Image Source = "ic_eyeopen.png"
+                   HorizontalOptions = "End"                   
+                   WidthRequest = "30"
+                   Grid.Row = "3"
+                   Grid.Column = "4"/>
+
+            <Image Source = "ic_translate.png"
+                   HorizontalOptions = "End"
+                   HeightRequest = "30"                  
+                   Grid.Row = "4"
+                   Grid.Column = "4"/>
+
+            <Button x:Name = "buttonLoginPage"
+                    Text = "LOG IN"                    
+                    Clicked = "buttonLoginPage_Clicked"
+                    Grid.Row = "5"                      
+                    Grid.Column = "0"
+                    Grid.ColumnSpan = "4"/>
+
+            <Label Text = "Login with"
+                   FontSize = "20"
+                   TextColor = "Gray"
+                   HorizontalOptions = "Center"
+                   Grid.Row = "6"
+                   Grid.Column = "0"
+                   Grid.ColumnSpan = "4"/>
+
+            <Image Source = "ic_googleplus.png"
+                   HeightRequest = "40"
+                   WidthRequest = "40"
+                   Grid.Row = "7"
+                   Grid.Column = "0"/>
+
+            <Image Source = "ic_github.png"
+                   HeightRequest = "40"
+                   WidthRequest = "40"
+                   Grid.Row = "7"
+                   Grid.Column = "1"/>
+
+            <Image Source = "ic_twitter.png"
+                   HeightRequest = "40"
+                   WidthRequest = "40"
+                   Grid.Row = "7"
+                   Grid.Column ="2"/>
+
+            <Image Source = "ic_facebook.png"
+                   HeightRequest = "40"
+                   WidthRequest = "40"
+                   Grid.Row = "7"
+                   Grid.Column = "3"/>
+        </Grid>
     </ScrollView>
 </ContentPage>
