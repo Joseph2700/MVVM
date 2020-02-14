@@ -171,4 +171,22 @@
   <ItemGroup>
     <BundleResource Include="Resources\ic_location.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_soda.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_beer.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_cafe.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_gps.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_pizza.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_plate.jpeg" />
+  </ItemGroup>
 </Project>
