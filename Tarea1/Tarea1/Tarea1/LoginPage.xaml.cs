@@ -24,7 +24,10 @@ namespace Tarea1
             {
                 await DisplayAlert("Campos Vacios", "Favor llenar todos los campos", "OK");
             }
-            await Navigation.PushAsync(new DiscoveryPage());
+           else
+           {
+                await Navigation.PushAsync(new DiscoveryPage());
+           }            
         }
 
         private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
