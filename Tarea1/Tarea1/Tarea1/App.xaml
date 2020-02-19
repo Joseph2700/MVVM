@@ -5,28 +5,5 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Tarea1.App">
-    <Application.Resources>
-        <ResourceDictionary>
-            <Style x:Key = "LabelTitle" TargetType = "Label">
-                <Setter Property = "FontSize" Value = "25"/>
-                <Setter Property = "TextColor" Value = "Black"/>
-                <Setter Property = "HorizontalOptions" Value = "Center"/>
-                <Setter Property = "FontAttributes" Value = "Bold"/>
-            </Style>
-
-            <Style x:Key = "LabelDescription" TargetType = "Label">
-                <Setter Property = "FontSize" Value = "15"/>
-                <Setter Property = "TextColor" Value = "Gray"/>
-                <Setter Property = "HorizontalOptions" Value = "Center"/>
-                <Setter Property = "FontAttributes" Value = "Bold"/>
-            </Style>
-
-            <Style x:Key = "ImagePosition" TargetType = "Image">
-                <Setter Property = "HorizontalOptions" Value = "Center"/>
-                <Setter Property = "WidthRequest" Value = "75"/>
-                <Setter Property = "HeightRequest" Value = "75"/>
-            </Style>
-        </ResourceDictionary>
-        
-    </Application.Resources>
+    
 </Application>

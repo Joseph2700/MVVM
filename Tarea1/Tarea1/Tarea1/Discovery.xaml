@@ -7,6 +7,30 @@
              x:Class="Tarea1.Discovery"
              Title  = "Discovery"
              IconImageSource = "ic_location.png">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key = "LabelTitle" TargetType = "Label">
+                <Setter Property = "FontSize" Value = "25"/>
+                <Setter Property = "TextColor" Value = "Black"/>
+                <Setter Property = "HorizontalOptions" Value = "Center"/>
+                <Setter Property = "FontAttributes" Value = "Bold"/>
+            </Style>
+
+            <Style x:Key = "LabelDescription" TargetType = "Label">
+                <Setter Property = "FontSize" Value = "15"/>
+                <Setter Property = "TextColor" Value = "Gray"/>
+                <Setter Property = "HorizontalOptions" Value = "Center"/>
+                <Setter Property = "FontAttributes" Value = "Bold"/>
+            </Style>
+
+            <Style x:Key = "ImagePosition" TargetType = "Image">
+                <Setter Property = "HorizontalOptions" Value = "Center"/>
+                <Setter Property = "WidthRequest" Value = "75"/>
+                <Setter Property = "HeightRequest" Value = "75"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
@@ -28,98 +52,98 @@
             </Grid.ColumnDefinitions>
 
             <Label Text = "Discovery"
-                   Style = "{StaticReasource LabelTitle}"
+                   Style = "{StaticResource LabelTitle}"
                    Grid.Row = "0"
                    Grid.Column = "0"
                    Grid.ColumnSpan = "2"/>
 
             <Image Source = "ic_beer.png"
-                   Style = "{StaticReasource ImagePosition}"
+                   Style = "{StaticResource ImagePosition}"
                    Grid.Row = "1"
                    Grid.Column = "0"/>
 
-            <Label Text = "Bars & Hotels"
-                   Style = "{StaticReasource LabelTitle}"
+            <Label Text = "Bars and Hotels"
+                   Style = "{StaticResource LabelTitle}"
                    Grid.Row = "2"
                    Grid.Column = "0"/>
 
             <Label Text = "42 Place"
-                   Style ="{StaticReasource LabelDescription}"
+                   Style ="{StaticResource LabelDescription}"
                    Grid.Row = "3"
                    Grid.Column = "0"/>
 
             <Image Source = "ic_cafe.png"
-                   Style = "{StaticReasource ImagePosition}"
+                   Style = "{StaticResource ImagePosition}"
                    Grid.Row = "4"
                    Grid.Column = "0"/>
 
             <Label Text = "Cafes"
-                   Style = "{StaticReasource LabelTitle}"
+                   Style = "{StaticResource LabelTitle}"
                    Grid.Row = "5"
                    Grid.Column = "0"/>
 
             <Label Text = "28 Place"
-                   Style ="{StaticReasource LabelDescription}"
+                   Style ="{StaticResource LabelDescription}"
                    Grid.Row = "6"
                    Grid.Column = "0"/>
 
             <Image Source = "ic_pizza.png"
-                   Style = "{StaticReasource ImagePosition}"
+                   Style = "{StaticResource ImagePosition}"
                    Grid.Row = "7"
                    Grid.Column = "0"/>
 
             <Label Text = "Fast Foods"
-                   Style = "{StaticReasource LabelTitle}"
+                   Style = "{StaticResource LabelTitle}"
                    Grid.Row = "8"
                    Grid.Column = "0"/>
 
             <Label Text = "29 Place"
-                   Style ="{StaticReasource LabelDescription}"
+                   Style ="{StaticResource LabelDescription}"
                    Grid.Row = "9"
                    Grid.Column = "0"/>
 
             <Image Source = "ic_plate.png"
-                   Style = "{StaticReasource ImagePosition}"
+                   Style = "{StaticResource ImagePosition}"
                    Grid.Row = "1"
                    Grid.Column = "1"/>
 
             <Label Text = "Fine Dinning"
-                   Style = "{StaticReasource LabelTitle}"
+                   Style = "{StaticResource LabelTitle}"
                    Grid.Row = "2"
                    Grid.Column = "1"/>
 
             <Label Text = "15 Place"
-                   Style ="{StaticReasource LabelDescription}"
+                   Style ="{StaticResource LabelDescription}"
                    Grid.Row = "3"
                    Grid.Column = "1"/>
 
             <Image Source = "ic_gps.png"
-                   Style = "{StaticReasource ImagePosition}"
+                   Style = "{StaticResource ImagePosition}"
                    Grid.Row = "4"
                    Grid.Column = "1"/>
 
             <Label Text = "Nearby"
-                   Style = "{StaticReasource LabelTitle}"
+                   Style = "{StaticResource LabelTitle}"
                    Grid.Row = "5"
                    Grid.Column = "1"/>
 
             <Label Text = "34 Place"
-                   Style ="{StaticReasource LabelDescription}"
+                   Style ="{StaticResource LabelDescription}"
                    Grid.Row = "6"
                    Grid.Column = "1"/>
 
             <Image Source = "ic_soda.png"
-                   Style = "{StaticReasource ImagePosition}"
+                   Style = "{StaticResource ImagePosition}"
                    Grid.Row = "7"
                    Grid.Column = "1"/>
 
             <Label Text = "Featured Foods"
-                   Style = "{StaticReasource LabelTitle}"
+                   Style = "{StaticResource LabelTitle}"
                    Grid.Row = "8"
                    Grid.Column = "1"/>
 
             <Label Text = "21 Place"
-                   Style ="{StaticReasource LabelDescription}"
+                   Style ="{StaticResource LabelDescription}"
                    Grid.Row = "9"
                    Grid.Column = "1"/>
         </Grid>
