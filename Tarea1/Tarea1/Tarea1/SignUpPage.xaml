@@ -37,7 +37,7 @@
                    HorizontalOptions = "EndAndExpand"
                    Grid.Column = "1"
                    Grid.Row = "0"
-                   Grid.ColumnSpan = "2">
+                   Grid.ColumnSpan = "5">
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer
                         Tapped = "TapGestureRecognizer_Tapped"/>
@@ -50,32 +50,32 @@
                    VerticalOptions = "Center"
                    Grid.Row = "1"
                    Grid.Column = "0"
-                   Grid.ColumnSpan = "4"/>
+                   Grid.ColumnSpan = "6"/>
 
             <Entry x:Name = "entrySignUpEmail"
                    Placeholder = "Email address"
-                   Grid.Row = "0"
-                   Grid.Column = "2"
-                   Grid.ColumnSpan = "2"/>
+                   Grid.Row = "2"
+                   Grid.Column = "0"
+                   Grid.ColumnSpan = "6"/>
 
             <Entry x:Name = "entrySignUpUsername"
                    Placeholder = "Username"
                    Grid.Row = "3"
                    Grid.Column = "0"
-                   Grid.ColumnSpan = "2"/>
+                   Grid.ColumnSpan = "6"/>
 
             <Entry x:Name = "entrySignUpPassword"
                    Placeholder = "Password"
                    IsPassword = "True"
                    Grid.Row = "4"
                    Grid.Column = "0"
-                   Grid.ColumnSpan = "2"/>
+                   Grid.ColumnSpan = "6"/>
 
             <Image Source = "ic_eyeopen.png"
                    HorizontalOptions = "End"                   
                    WidthRequest = "30"
                    Grid.Row = "4"
-                   Grid.Column = "2"/>
+                   Grid.Column = "6"/>
 
 
             <Entry x:Name = "entrySignUpRPassword"
@@ -83,20 +83,21 @@
                    IsPassword = "True"
                    Grid.Row = "5"
                    Grid.Column = "0"
-                   Grid.ColumnSpan = "2"/>
+                   Grid.ColumnSpan = "6"/>
 
             <Image Source = "ic_eyeopen.png"
                    HorizontalOptions = "End"                   
                    WidthRequest = "30"
                    Grid.Row = "5"
-                   Grid.Column = "1"/>
+                   Grid.Column = "1"
+                   Grid.ColumnSpan = "6"/>
 
             <Button x:Name = "buttonSignUpPage"
                     Text = "SIGN UP"                    
                     Clicked = "buttonSignUpPage_Clicked"
                     Grid.Row = "6"                      
                     Grid.Column = "0"
-                    Grid.ColumnSpan = "2"/>
+                    Grid.ColumnSpan = "6"/>
 
             <Label Text = "Terms of Service"
                    TextColor="Gray"
@@ -104,7 +105,7 @@
                    HorizontalOptions = "Center"
                    Grid.Row = "7"
                    Grid.Column = "0"
-                   Grid.ColumnSpan = "2"/>
+                   Grid.ColumnSpan = "6"/>
         </Grid>        
     </ScrollView>
 </ContentPage>
