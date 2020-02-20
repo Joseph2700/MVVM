@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"      
              mc:Ignorable="d"
              x:Class="Tarea1.Discovery"
              Title  = "Discovery"
@@ -50,7 +50,7 @@
                 <ColumnDefinition Width = "2.5*"/>
                 <ColumnDefinition Width = "2.5*"/>
             </Grid.ColumnDefinitions>
-
+            
             <Label Text = "Discovery"
                    Style = "{StaticResource LabelTitle}"
                    Grid.Row = "0"
@@ -58,14 +58,21 @@
                    Grid.ColumnSpan = "2"/>
 
             <Image Source = "ic_beer.png"
-                   Style = "{StaticResource ImagePosition}"                  
+                   Style = "{StaticResource ImagePosition}"               
                    Grid.Row = "1"
-                   Grid.Column = "0"/>
+                   Grid.Column = "0">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped = "TapGestureRecognizer_Tapped">
+                    </TapGestureRecognizer>
+                </Image.GestureRecognizers>
+                
+            </Image>                             
 
             <Label Text = "Bars and Hotels"
-                   Style = "{StaticResource LabelTitle}"
-                   Grid.Row = "2"
-                   Grid.Column = "0"/>
+              Style = "{StaticResource LabelTitle}"
+              Grid.Row = "2"
+              Grid.Column = "0"/>
 
             <Label Text = "42 Place"
                    Style ="{StaticResource LabelDescription}"

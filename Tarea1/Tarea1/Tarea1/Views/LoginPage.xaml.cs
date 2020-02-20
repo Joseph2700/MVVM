@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Tarea1.ViewModels;
 using Xamarin.Forms;
 
 namespace Tarea1
@@ -16,23 +17,7 @@ namespace Tarea1
         public MainPage()
         {
             InitializeComponent();
-        }
-
-        async void buttonLoginPage_Clicked(object sender, EventArgs e)
-        {
-           if(string.IsNullOrEmpty(entryLoginUsername.Text) || string.IsNullOrEmpty(entryLoginPassword.Text))
-            {
-                await DisplayAlert("Campos Vacios", "Favor llenar todos los campos", "OK");
-            }
-           else
-           {
-                await Navigation.PushAsync(new DiscoveryPage());
-           }            
-        }
-
-        private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new SignUpPage());
-        }
+            BindingContext = new LoginPageViewModel();
+        }       
     }
 }

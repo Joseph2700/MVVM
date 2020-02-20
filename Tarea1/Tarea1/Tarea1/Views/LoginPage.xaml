@@ -41,8 +41,7 @@
                    Grid.Row = "0"
                    Grid.ColumnSpan = "2">
                 <Label.GestureRecognizers>
-                    <TapGestureRecognizer
-                        Tapped = "TapGestureRecognizer_Tapped"/>
+                    <TapGestureRecognizer Command = "{Binding GoToSignUp}"/>
                 </Label.GestureRecognizers>
             </Label>
 
@@ -56,13 +55,15 @@
 
             <Entry x:Name = "entryLoginUsername"
                    Placeholder = "Username or email address"
+                   Text = "{Binding User.UserName}"
                    Grid.Row = "2"
                    Grid.Column = "0"
                    Grid.ColumnSpan = "4"/>
 
             <Entry x:Name = "entryLoginPassword"
                    Placeholder = "Password"
-                   IsPassword = "True"
+                   Text = "{Binding User.Password}"
+                   IsPassword = "{Binding User.IsPassword}"
                    Grid.Row = "3"
                    Grid.Column = "0"
                    Grid.ColumnSpan = "4"/>
@@ -81,7 +82,7 @@
 
             <Button x:Name = "buttonLoginPage"
                     Text = "LOG IN"                    
-                    Clicked = "buttonLoginPage_Clicked"
+                    Command = "{Binding LoginCommand}"
                     Grid.Row = "5"                      
                     Grid.Column = "0"
                     Grid.ColumnSpan = "4"/>
