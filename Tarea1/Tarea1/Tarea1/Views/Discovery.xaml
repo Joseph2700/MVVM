@@ -58,7 +58,7 @@
                    Grid.ColumnSpan = "2"/>
 
             <Image Source = "ic_beer.png"
-                   Style = "{StaticResource ImagePosition}"
+                   Style = "{StaticResource ImagePosition}"                  
                    Grid.Row = "1"
                    Grid.Column = "0"/>
 
