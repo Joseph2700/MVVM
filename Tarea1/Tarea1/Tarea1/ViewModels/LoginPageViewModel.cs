@@ -32,11 +32,7 @@ namespace Tarea1.ViewModels
            {
                await App.Current.MainPage.Navigation.PushAsync(new SignUpPage());
            });
-            LoginUser.Image = "ic_eyeopen";
-            Visibility = new Command(() =>
-            {
-                LoginUser.IsPassword = !LoginUser.IsPassword;
-            });
+            LoginUser.Image = "ic_eyeopen";            
         }        
 
         public event PropertyChangedEventHandler PropertyChanged;

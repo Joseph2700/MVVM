@@ -57,7 +57,7 @@
                    Grid.Column = "0"
                    Grid.ColumnSpan = "2"/>
 
-            <Image Source = "ic_beer.png"
+            <Image Source = "{Binding BarsHotels.Image}"
                    Style = "{StaticResource ImagePosition}"               
                    Grid.Row = "1"
                    Grid.Column = "0">
@@ -66,90 +66,89 @@
                         Tapped = "TapGestureRecognizer_Tapped">
                     </TapGestureRecognizer>
                 </Image.GestureRecognizers>
-                
             </Image>                             
 
-            <Label Text = "Bars and Hotels"
+            <Label Text = "{Binding BarsHotels.Title}"
               Style = "{StaticResource LabelTitle}"
               Grid.Row = "2"
               Grid.Column = "0"/>
 
-            <Label Text = "42 Place"
+            <Label Text = "{Binding BarsHotels.Description}"
                    Style ="{StaticResource LabelDescription}"
                    Grid.Row = "3"
                    Grid.Column = "0"/>
 
-            <Image Source = "ic_cafe.png"
+            <Image Source = "{Binding Cafes.Image}"
                    Style = "{StaticResource ImagePosition}"
                    Grid.Row = "4"
                    Grid.Column = "0"/>
 
-            <Label Text = "Cafes"
+            <Label Text = "{Binding Cafes.Title}"
                    Style = "{StaticResource LabelTitle}"
                    Grid.Row = "5"
                    Grid.Column = "0"/>
 
-            <Label Text = "28 Place"
+            <Label Text = "{Binding Cafes.Description}"
                    Style ="{StaticResource LabelDescription}"
                    Grid.Row = "6"
                    Grid.Column = "0"/>
 
-            <Image Source = "ic_pizza.png"
+            <Image Source = "{Binding FastFoods.Image}"
                    Style = "{StaticResource ImagePosition}"
                    Grid.Row = "7"
                    Grid.Column = "0"/>
 
-            <Label Text = "Fast Foods"
+            <Label Text = "{Binding FastFoods.Title}"
                    Style = "{StaticResource LabelTitle}"
                    Grid.Row = "8"
                    Grid.Column = "0"/>
 
-            <Label Text = "29 Place"
+            <Label Text = "{Binding FastFoods.Description}"
                    Style ="{StaticResource LabelDescription}"
                    Grid.Row = "9"
                    Grid.Column = "0"/>
 
-            <Image Source = "ic_plate.png"
+            <Image Source = "{Binding FineDinning.Image}"
                    Style = "{StaticResource ImagePosition}"
                    Grid.Row = "1"
                    Grid.Column = "1"/>
 
-            <Label Text = "Fine Dinning"
+            <Label Text = "{Binding FineDinning.Title}"
                    Style = "{StaticResource LabelTitle}"
                    Grid.Row = "2"
                    Grid.Column = "1"/>
 
-            <Label Text = "15 Place"
+            <Label Text = "{Binding FineDinning.Description}"
                    Style ="{StaticResource LabelDescription}"
                    Grid.Row = "3"
                    Grid.Column = "1"/>
 
-            <Image Source = "ic_gps.png"
+            <Image Source = "{Binding Nearby.Image}"
                    Style = "{StaticResource ImagePosition}"
                    Grid.Row = "4"
                    Grid.Column = "1"/>
 
-            <Label Text = "Nearby"
+            <Label Text = "{Binding Nearby.Title}"
                    Style = "{StaticResource LabelTitle}"
                    Grid.Row = "5"
                    Grid.Column = "1"/>
 
-            <Label Text = "34 Place"
+            <Label Text = "{Binding Nearby.Description}"
                    Style ="{StaticResource LabelDescription}"
                    Grid.Row = "6"
                    Grid.Column = "1"/>
 
-            <Image Source = "ic_soda.png"
+            <Image Source = "{Binding FeaturedFoods.Image}"
                    Style = "{StaticResource ImagePosition}"
                    Grid.Row = "7"
                    Grid.Column = "1"/>
 
-            <Label Text = "Featured Foods"
+            <Label Text = "{Binding FeaturedFoods.Title}"
                    Style = "{StaticResource LabelTitle}"
                    Grid.Row = "8"
                    Grid.Column = "1"/>
 
-            <Label Text = "21 Place"
+            <Label Text = "{Binding FeaturedFoods.Description}"
                    Style ="{StaticResource LabelDescription}"
                    Grid.Row = "9"
                    Grid.Column = "1"/>
