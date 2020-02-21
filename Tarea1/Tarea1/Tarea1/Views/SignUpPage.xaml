@@ -39,8 +39,7 @@
                    Grid.Row = "0"
                    Grid.ColumnSpan = "5">
                 <Label.GestureRecognizers>
-                    <TapGestureRecognizer
-                        Tapped = "TapGestureRecognizer_Tapped"/>
+                    <TapGestureRecognizer Command = "{Binding GoToLogin}"/>
                 </Label.GestureRecognizers>
             </Label>
 
@@ -54,19 +53,22 @@
 
             <Entry x:Name = "entrySignUpEmail"
                    Placeholder = "Email address"
+                   Text = "{Binding SignUpUser.EmailAddress}"
                    Grid.Row = "2"
                    Grid.Column = "0"
                    Grid.ColumnSpan = "6"/>
 
             <Entry x:Name = "entrySignUpUsername"
                    Placeholder = "Username"
+                   Text = "{Binding SignUpUser.UserName}"
                    Grid.Row = "3"
                    Grid.Column = "0"
                    Grid.ColumnSpan = "6"/>
 
             <Entry x:Name = "entrySignUpPassword"
                    Placeholder = "Password"
-                   IsPassword = "True"
+                   Text = "{Binding SignUpUser.Password}"
+                   IsPassword = "{Binding SignUpUser.IsPassword}"
                    Grid.Row = "4"
                    Grid.Column = "0"
                    Grid.ColumnSpan = "6"/>
@@ -80,7 +82,8 @@
 
             <Entry x:Name = "entrySignUpRPassword"
                    Placeholder = "Repeat Password"
-                   IsPassword = "True"
+                   Text = "{Binding SignUpUser.RepeatPassword}"
+                   IsPassword = "{Binding SignUpUser.IsPassword}"
                    Grid.Row = "5"
                    Grid.Column = "0"
                    Grid.ColumnSpan = "6"/>
@@ -94,7 +97,7 @@
 
             <Button x:Name = "buttonSignUpPage"
                     Text = "SIGN UP"                    
-                    Clicked = "buttonSignUpPage_Clicked"
+                    Command = "{Binding SignUpCommand}"
                     Grid.Row = "6"                      
                     Grid.Column = "0"
                     Grid.ColumnSpan = "6"/>
