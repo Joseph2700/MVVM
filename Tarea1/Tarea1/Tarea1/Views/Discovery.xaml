@@ -32,7 +32,7 @@
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
-        <Grid>
+        <Grid BackgroundColor = "LightGray">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
@@ -57,14 +57,14 @@
                    Grid.Column = "0"
                    Grid.ColumnSpan = "2"/>
 
-            <Image Source = "{Binding BarsHotels.Image}"
+            <Image x:Name = "BarsHotels"
+                   Source = "{Binding BarsHotels.Image}"
                    Style = "{StaticResource ImagePosition}"               
                    Grid.Row = "1"
                    Grid.Column = "0">
                 <Image.GestureRecognizers>
                     <TapGestureRecognizer
-                        Tapped = "TapGestureRecognizer_Tapped">
-                    </TapGestureRecognizer>
+                        Tapped = "TappedBarsHotels"/>
                 </Image.GestureRecognizers>
             </Image>                             
 
@@ -76,12 +76,19 @@
             <Label Text = "{Binding BarsHotels.Description}"
                    Style ="{StaticResource LabelDescription}"
                    Grid.Row = "3"
-                   Grid.Column = "0"/>
+                   Grid.Column = "0">
+            </Label>
 
-            <Image Source = "{Binding Cafes.Image}"
+            <Image x:Name = "Cafes"
+                   Source = "{Binding Cafes.Image}"
                    Style = "{StaticResource ImagePosition}"
                    Grid.Row = "4"
-                   Grid.Column = "0"/>
+                   Grid.Column = "0">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped = "TappedCafes"/>                    
+                </Image.GestureRecognizers>
+            </Image>
 
             <Label Text = "{Binding Cafes.Title}"
                    Style = "{StaticResource LabelTitle}"
@@ -93,10 +100,15 @@
                    Grid.Row = "6"
                    Grid.Column = "0"/>
 
-            <Image Source = "{Binding FastFoods.Image}"
+            <Image x:Name = "FastFoods"
+                   Source = "{Binding FastFoods.Image}"
                    Style = "{StaticResource ImagePosition}"
                    Grid.Row = "7"
-                   Grid.Column = "0"/>
+                   Grid.Column = "0">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped = "TappedFastFoods"/>
+                </Image.GestureRecognizers>
+            </Image>
 
             <Label Text = "{Binding FastFoods.Title}"
                    Style = "{StaticResource LabelTitle}"
@@ -108,10 +120,15 @@
                    Grid.Row = "9"
                    Grid.Column = "0"/>
 
-            <Image Source = "{Binding FineDinning.Image}"
+            <Image x:Name = "FineDinning"
+                   Source = "{Binding FineDinning.Image}"
                    Style = "{StaticResource ImagePosition}"
                    Grid.Row = "1"
-                   Grid.Column = "1"/>
+                   Grid.Column = "1">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped = "TappedFineDinning"/>
+                </Image.GestureRecognizers>
+            </Image>
 
             <Label Text = "{Binding FineDinning.Title}"
                    Style = "{StaticResource LabelTitle}"
@@ -123,10 +140,15 @@
                    Grid.Row = "3"
                    Grid.Column = "1"/>
 
-            <Image Source = "{Binding Nearby.Image}"
+            <Image x:Name = "Nearby"
+                   Source = "{Binding Nearby.Image}"
                    Style = "{StaticResource ImagePosition}"
                    Grid.Row = "4"
-                   Grid.Column = "1"/>
+                   Grid.Column = "1">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped = "TappedNearby"/>
+                </Image.GestureRecognizers>
+            </Image>
 
             <Label Text = "{Binding Nearby.Title}"
                    Style = "{StaticResource LabelTitle}"
@@ -138,10 +160,15 @@
                    Grid.Row = "6"
                    Grid.Column = "1"/>
 
-            <Image Source = "{Binding FeaturedFoods.Image}"
+            <Image x:Name = "FeaturedFoods"
+                   Source = "{Binding FeaturedFoods.Image}"
                    Style = "{StaticResource ImagePosition}"
                    Grid.Row = "7"
-                   Grid.Column = "1"/>
+                   Grid.Column = "1">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped = "TappedFeaturedFoods"/>
+                </Image.GestureRecognizers>
+            </Image>
 
             <Label Text = "{Binding FeaturedFoods.Title}"
                    Style = "{StaticResource LabelTitle}"

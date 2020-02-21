@@ -19,9 +19,64 @@ namespace Tarea1
             BindingContext = new DiscoveryViewModel();
         }
 
-        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        private void TappedBarsHotels(object sender, EventArgs e)
         {
+            BarsHotels.BackgroundColor = Color.Gold;
+            Cafes.BackgroundColor = default;
+            FastFoods.BackgroundColor = default;
+            FineDinning.BackgroundColor = default;
+            Nearby.BackgroundColor = default;
+            FeaturedFoods.BackgroundColor = default;
+        }
 
-        }       
+        private void TappedCafes(object sender, EventArgs e)
+        {
+            BarsHotels.BackgroundColor = default;
+            Cafes.BackgroundColor = Color.Gold;
+            FastFoods.BackgroundColor = default;
+            FineDinning.BackgroundColor = default;
+            Nearby.BackgroundColor = default;
+            FeaturedFoods.BackgroundColor = default;
+        }
+
+        private void TappedFastFoods(object sender, EventArgs e)
+        {
+            BarsHotels.BackgroundColor = default;
+            Cafes.BackgroundColor = default;
+            FastFoods.BackgroundColor = Color.Gold;
+            FineDinning.BackgroundColor = default;
+            Nearby.BackgroundColor = default;
+            FeaturedFoods.BackgroundColor = default;
+        }
+
+        private void TappedFineDinning(object sender, EventArgs e)
+        {
+            BarsHotels.BackgroundColor = default;
+            Cafes.BackgroundColor = default;
+            FastFoods.BackgroundColor = default;
+            FineDinning.BackgroundColor = Color.Gold;
+            Nearby.BackgroundColor = default;
+            FeaturedFoods.BackgroundColor = default;
+        }
+
+        private void TappedNearby(object sender, EventArgs e)
+        {
+            BarsHotels.BackgroundColor = default;
+            Cafes.BackgroundColor = default;
+            FastFoods.BackgroundColor = default;
+            FineDinning.BackgroundColor = default;
+            Nearby.BackgroundColor = Color.Gold;
+            FeaturedFoods.BackgroundColor = default;
+        }
+
+        private void TappedFeaturedFoods(object sender, EventArgs e)
+        {
+            BarsHotels.BackgroundColor = default;
+            Cafes.BackgroundColor = default;
+            FastFoods.BackgroundColor = default;
+            FineDinning.BackgroundColor = default;
+            Nearby.BackgroundColor = default;
+            FeaturedFoods.BackgroundColor = Color.Gold;
+        }
     }
 }
