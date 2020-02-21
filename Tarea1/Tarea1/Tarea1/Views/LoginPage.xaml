@@ -55,15 +55,15 @@
 
             <Entry x:Name = "entryLoginUsername"
                    Placeholder = "Username or email address"
-                   Text = "{Binding User.UserName}"
+                   Text = "{Binding LoginUser.UserName}"
                    Grid.Row = "2"
                    Grid.Column = "0"
                    Grid.ColumnSpan = "4"/>
 
             <Entry x:Name = "entryLoginPassword"
                    Placeholder = "Password"
-                   Text = "{Binding User.Password}"
-                   IsPassword = "{Binding User.IsPassword}"
+                   Text = "{Binding LoginUser.Password}"
+                   IsPassword = "{Binding LoginUser.IsPassword}"
                    Grid.Row = "3"
                    Grid.Column = "0"
                    Grid.ColumnSpan = "4"/>

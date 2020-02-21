@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Tarea1.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,6 +15,7 @@ namespace Tarea1
         public SignUpPage()
         {
             InitializeComponent();
+            BindingContext = new SignUpPageViewModel();
         }
 
         async void TapGestureRecognizer_Tapped(object sender, EventArgs e)

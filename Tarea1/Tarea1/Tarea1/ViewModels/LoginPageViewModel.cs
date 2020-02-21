@@ -10,14 +10,14 @@ namespace Tarea1.ViewModels
 {
     public class LoginPageViewModel : INotifyPropertyChanged
     {
-        public LoginUser User { get; set; } = new LoginUser();
+        public LoginUser LoginUser { get; set; } = new LoginUser();
         public ICommand LoginCommand { get; set; }
         public ICommand GoToSignUp { get; set; }
         public LoginPageViewModel()
         {
             LoginCommand = new Command(async () =>
             {
-                if(string.IsNullOrEmpty(User.UserName) || (string.IsNullOrEmpty(User.Password)))
+                if(string.IsNullOrEmpty(LoginUser.UserName) || (string.IsNullOrEmpty(LoginUser.Password)))
                 {
                     await App.Current.MainPage.DisplayAlert("Campos Vacios", "Favor llenar todos los campos", "OK");
                 }
