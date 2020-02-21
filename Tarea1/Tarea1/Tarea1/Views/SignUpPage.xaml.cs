@@ -16,23 +16,6 @@ namespace Tarea1
         {
             InitializeComponent();
             BindingContext = new SignUpPageViewModel();
-        }
-
-        async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new MainPage());
-        }
-
-        async void buttonSignUpPage_Clicked(object sender, EventArgs e)
-        {
-            if (string.IsNullOrEmpty(entrySignUpEmail.Text) || string.IsNullOrEmpty(entrySignUpUsername.Text) || string.IsNullOrEmpty(entrySignUpPassword.Text) || string.IsNullOrEmpty(entrySignUpRPassword.Text))
-            {
-                await DisplayAlert("Campos Vacios", "Favor llenar todos los campos", "OK");
-            }
-           else
-            {
-                await Navigation.PushAsync(new DiscoveryPage());
-            }
-        }
+        }               
     }
 }

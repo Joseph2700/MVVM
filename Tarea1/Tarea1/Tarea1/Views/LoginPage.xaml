@@ -68,7 +68,7 @@
                    Grid.Column = "0"
                    Grid.ColumnSpan = "4"/>
 
-            <Image Source = "ic_eyeopen.png"
+            <Image Source = "{Binding LoginUser.Image}"
                    HorizontalOptions = "End"                   
                    WidthRequest = "30"
                    Grid.Row = "3"

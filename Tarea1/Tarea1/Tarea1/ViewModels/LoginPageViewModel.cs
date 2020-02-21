@@ -13,6 +13,7 @@ namespace Tarea1.ViewModels
         public LoginUser LoginUser { get; set; } = new LoginUser();
         public ICommand LoginCommand { get; set; }
         public ICommand GoToSignUp { get; set; }
+        public ICommand Visibility { get; set; }
         public LoginPageViewModel()
         {
             LoginCommand = new Command(async () =>
@@ -31,7 +32,12 @@ namespace Tarea1.ViewModels
            {
                await App.Current.MainPage.Navigation.PushAsync(new SignUpPage());
            });
-        }
+            LoginUser.Image = "ic_eyeopen";
+            Visibility = new Command(() =>
+            {
+                LoginUser.IsPassword = !LoginUser.IsPassword;
+            });
+        }        
 
         public event PropertyChangedEventHandler PropertyChanged;
     }
